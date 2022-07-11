@@ -6,7 +6,7 @@
     <a href="#credits">Credits</a>
 </p>
 <p align="center">
-    <a href="#"><img src="https://user-images.githubusercontent.com/86733574/178231733-69aa60a3-ad3b-473f-a6cc-3c3aed535d6b.png" alt="screenshot" width="650"></a>
+    <a href="#"><img src="https://user-images.githubusercontent.com/86733574/178232472-7f6eb642-90d5-403c-ba35-b4f14e1e7abd.png" alt="screenshot" width="650"></a>
 </p>
 
 
