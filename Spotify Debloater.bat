@@ -172,6 +172,8 @@ del /s /q "%APPDATA%\Spotify\chrome_elf_bak.dll" > NUL 2>&1
 del /s /q "%APPDATA%\Spotify\chrome_elf.dll" > NUL 2>&1
 move /y "%userprofile%\Downloads\Spotify-Debloater-main\Spotify-Debloater-main\chrome_elf_bak.dll" "%APPDATA%\Spotify\chrome_elf_bak.dll" > Nul 2>&1
 move /y "%userprofile%\Downloads\Spotify-Debloater-main\Spotify-Debloater-main\chrome_elf.dll" "%APPDATA%\Spotify\chrome_elf.dll" > Nul 2>&1 > Nul 2>&1
+move /y "%userprofile%\Downloads\Spotify-Debloater-main\chrome_elf_bak.dll" "%APPDATA%\Spotify\chrome_elf_bak.dll" > Nul 2>&1
+move /y "%userprofile%\Downloads\Spotify-Debloater-main\chrome_elf.dll" "%APPDATA%\Spotify\chrome_elf.dll" > Nul 2>&1 > Nul 2>&1
 goto last
 
 :last
