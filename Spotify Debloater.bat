@@ -111,6 +111,8 @@ del /f/s/q "%appdata%\Spotify\locales\pl.pak" >NUL 2>&1
 del /f/s/q "%appdata%\Spotify\locales\pt-PT.pak" >NUL 2>&1
 del /f/s/q "%appdata%\Spotify\locales\pt-BR.pak" >NUL 2>&1
 del /f/s/q "%appdata%\Spotify\locales\pt-BR.mo" >NUL 2>&1
+del /f/s/q "%appdata%\Spotify\locales\zh-TW.mo" >NUL 2>&1
+del /f/s/q "%appdata%\Spotify\locales\uk.mo" >NUL 2>&1
 del /f/s/q "%appdata%\Spotify\locales\ro.pak" >NUL 2>&1
 del /f/s/q "%appdata%\Spotify\locales\ru.mo" >NUL 2>&1
 del /f/s/q "%appdata%\Spotify\locales\ru.pak" >NUL 2>&1
@@ -165,15 +167,19 @@ if errorlevel 2 cls && goto BlockADS
 if errorlevel 1 cls && goto last
 
 :BlockADS
+:: Back Up incase you wanted to revert
 md "%APPDATA%\BlockSpotifyADSBackup" > Nul 2>&1
 move /y "%APPDATA%\Spotify\chrome_elf_bak.dll" "%APPDATA%\BlockSpotifyADSBackup\chrome_elf_bak.dll" > Nul 2>&1
 move /y "%APPDATA%\Spotify\chrome_elf.dll" "%APPDATA%\BlockSpotifyADSBackup\chrome_elf.dll" > Nul 2>&1
 del /s /q "%APPDATA%\Spotify\chrome_elf_bak.dll" > NUL 2>&1
 del /s /q "%APPDATA%\Spotify\chrome_elf.dll" > NUL 2>&1
-move /y "%userprofile%\Downloads\Spotify-Debloater-main\Spotify-Debloater-main\chrome_elf_bak.dll" "%%userprofile%\AppData\Roaming\Spotify\chrome_elf_bak.dll" > Nul 2>&1
-move /y "%userprofile%\Downloads\Spotify-Debloater-main\Spotify-Debloater-main\chrome_elf.dll" "%userprofile%\AppData\Roaming\Spotify\chrome_elf.dll" > Nul 2>&1 > Nul 2>&1
-move /y "%userprofile%\Downloads\Spotify-Debloater-main\chrome_elf_bak.dll" "%userprofile%\AppData\Roaming\Spotify\chrome_elf_bak.dll" > Nul 2>&1
-move /y "%userprofile%\Downloads\Spotify-Debloater-main\chrome_elf.dll" "%userprofile%\AppData\Roaming\Spotify\chrome_elf.dll" > Nul 2>&1 > Nul 2>&1
+move /y "%userprofile%\Downloads\Spotify-Debloater-main\Spotify-Debloater-main\chrome_elf_bak.dll" "%APPDATA%\Spotify\chrome_elf_bak.dll" > Nul 2>&1
+move /y "%userprofile%\Downloads\Spotify-Debloater-main\Spotify-Debloater-main\chrome_elf.dll" "%APPDATA%\Spotify\chrome_elf.dll" > Nul 2>&1 > Nul 2>&1
+move /y "%userprofile%\Downloads\Spotify-Debloater-main\chrome_elf_bak.dll" "%APPDATA%\Spotify\chrome_elf_bak.dll" > Nul 2>&1
+move /y "%userprofile%\Downloads\Spotify-Debloater-main\chrome_elf.dll" "%APPDATA%\Spotify\chrome_elf.dll" > Nul 2>&1 > Nul 2>&1
+:: path for Download manager kids
+move /y "%userprofile%\Downloads\Compressed\Spotify-Debloater-main\chrome_elf_bak.dll" "%APPDATA%\Spotify\chrome_elf_bak.dll" > Nul 2>&1
+move /y "%userprofile%\Downloads\Compressed\Spotify-Debloater-main\chrome_elf.dll" "%APPDATA%\Spotify\chrome_elf.dll" > Nul 2>&1 > Nul 2>&1
 goto last
 
 :last
