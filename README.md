@@ -21,5 +21,5 @@ Support me by following me on [Twitter](https://twitter.com/Flicky_VFX)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Credits
 * Canonez.
-* K3rnelPan1c.
+* Couleur.
 * BlockTheSpot.
