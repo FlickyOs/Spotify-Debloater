@@ -19,6 +19,13 @@ If you have any issues, contact me via Discord (**Flicky#1746**)   </br>
 Support me by following me on [Twitter](https://twitter.com/Flicky_VFX)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Windows 7!
+The block ADS option won't work on windows 7 due to curl...You will need to add the files manually to block ADS and Telemetry:
+* Close Spotify.
+* Download "chrome_elf.dll" , "chrome_elf_bak.dll" , "xpui.bak" and "xpui.spa".
+* Add "chrome_elf.dll" and "chrome_elf_bak.dll" to "C:\Users\%username%\AppData\Roaming\Spotify".
+* Add "xpui.bak" and "xpui.spa" to "C:\Users\%username%\AppData\Roaming\Spotify\Apps".
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Credits
 * Couleur.
 * BlockTheSpot.
